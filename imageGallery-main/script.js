@@ -24,7 +24,9 @@ async function loadAlbum(album) {
   gallery.innerHTML = `<p class="text-gray-500">Loading...</p>`;
 
   try {
-    const res = await fetch(`${IMAGES_URL}?album=${encodeURIComponent(album)}`);
+    const imagesUrl = new URL(IMAGES_URL);
+    imagesUrl.searchParams.set("album", album);
+    const res = await fetch(imagesUrl);
     if (!res.ok) throw new Error(`Could not load images (HTTP ${res.status}).`);
     const data = await res.json();
 
