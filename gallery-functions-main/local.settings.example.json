@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "VISION_ENDPOINT": "https://YOUR-VISION-RESOURCE.cognitiveservices.azure.com/",
+    "VISION_KEY": "PASTE_YOUR_VISION_KEY_HERE",
+    "COSMOS_ENDPOINT": "https://YOUR-COSMOS-ACCOUNT.documents.azure.com:443/",
+    "COSMOS_KEY": "PASTE_YOUR_COSMOS_KEY_HERE",
+    "COSMOS_DB": "gallery",
+    "COSMOS_CONTAINER": "images",
+    "STORAGE_CONNECTION_STRING": "PASTE_YOUR_STORAGE_CONNECTION_STRING_HERE",
+    "STORAGE_CONTAINER": "images",
+    "SAS_READ_EXPIRY_MINUTES": "60"
+  }
+}

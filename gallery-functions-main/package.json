@@ -1,0 +1,13 @@
+{
+  "name": "gallery-functions",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "func start --cors *"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.1.1",
+    "@azure/storage-blob": "^12.18.0",
+    "node-fetch": "^3.3.2"
+  }
+}
